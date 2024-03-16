@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+#main{
+    padding-right: 5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nav{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#nav h4{
+    padding: 10px;
+}
+
+.logo{
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+}
+.logo1{
+    top: 4px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+.center h1{
+    font-size: 4vw;
+    font-weight: 100;
+}
+.center{
+    margin-left:7vw;
+    width: 40vw;
+    height: 30vh;
+}
+.center2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+p{
+    margin-top: 4.5vw;
+    font-size: 1.5vw;
+    width: 40vw;
+    height: 30vh;
+    margin-left:7vw;
+}
+.right{
+    width: 20%;
+}
+.elem{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: right; */
+    margin: 10px;
+    padding: 10px 0px;
+    border-top: 1px solid black;
+}
+.elem a{
+    text-decoration: none;
+    color: black;
+}
+.elem svg{
+    width: 22px;
+    height: 22px;
+    opacity : 0;
+}
+.elem:hover svg{
+    opacity: 1;
+}
+.elem:hover{
+    text-decoration: underline;
+}
+.img1{
+   height:45vh;
+   width:100vw;
+   background-color: aqua;
+   background-image: url(axi-aimee-tgigiWtLgio-unsplash.jpg);
+   background-size: cover;
+   object-fit: cover;
+   background-position: 0 45%;
+}
+.hey{
+    object-fit: cover;
+}
+@media (max-width: 816px){
+    #main{
+        padding-right: none;
+
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #nav{
+        font-size: 3vh;
+    }
+    #nav h4{
+        display: none;
+    }
+    .center h1{
+        font-size: 7vh;
+        font-weight: 100;
+    }
+    .center {
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 7vw;
+        width: 80%;
+    }
+    .center2{
+        display: flex;
+        flex-direction: column;
+    }
+    p {
+        margin-top: 2vh;
+        font-size: 3vh;
+        width: 80%;
+        height: 20vh;
+        margin-left: 7vw;
+    }
+    .right{
+        width: 80%;
+        margin-left: 6vw;
+    }
+    .elem{
+        justify-content: space-between;
+        margin: 10px;
+        padding: 10px 0px;
+        border-top: 1px solid black;
+    }
+    
+   
+    .elem:hover svg{
+        opacity: 1;
+    }
+    .elem:hover{
+        text-decoration: underline;
+    }
+    .img1{
+       height:35vh;
+       width:100vw;
+       background-color: aqua;
+       background-image: url(axi-aimee-tgigiWtLgio-unsplash.jpg);
+       background-size: cover;
+       object-fit: cover;
+       background-position: 0 45%;
+    }
+    .hey{
+        object-fit: cover;
+    }
+}
